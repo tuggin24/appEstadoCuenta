@@ -1,0 +1,13 @@
+<div class="transaction">
+  <fa-icon class="transaction-icon" [ngClass]="transaction.type.id === 1 ? 'btn-income' : 'btn-expenses'" [icon]="transaction.type.id === 1 ? Icons.faCircleArrowUp : Icons.faCircleArrowDown"></fa-icon>
+  <div class="div-value-1">
+
+
+    <!-- <fa-icon *ngIf="transaction.type.id === 2" class="transaction-icon" [icon]="Icons.faCircleArrowDown"></fa-icon> -->
+
+    <label class="lbl-value">{{ transaction.value | currency }}</label>
+  </div>
+  <div class="div-value-2">
+    <label class="lbl-desc">{{ transaction.description }}</label>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.transaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10 10 10 / 50%);
+  border-radius: 5px;
+  padding: 5px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.transaction-icon {
+  font-size: 35px;
+}
+
+.div-value-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.div-value-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lbl-value {
+  font-size: larger;
+}
+
+.lbl-desc {
+  font-size: medium;
+  color: rgb(116, 116, 116);
+}
+
+.btn-income {
+  color: rgb(77, 192, 96);;
+}
+
+.btn-expenses {
+  color: rgb(250, 107, 107);
+}

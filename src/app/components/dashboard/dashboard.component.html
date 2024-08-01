@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="header">
+    <div class="header-information">
+      <div class="date-div">
+        <label class="date-label">Julio 26 2024</label>
+      </div>
+      <div class="user-div">
+        <article ></article>
+        <!-- <img class="user-img" src="https://picsum.photos/700/400?random" > -->
+        <label class="user-name">Agustin</label>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="account">
+      <div class="account-balance">
+        <label class="acount-title">Balance de cuenta</label>
+        <label class="account-value">1,000,000</label>
+      </div>
+      <div class="account-balance-info">
+        <div class="div-balance-income">
+          <div class="div-balance-icons">
+            <fa-icon class="icon-arrow-income" [icon]="Icons.faArrowDown"></fa-icon>
+            <fa-icon class="icon-money-income" [icon]="Icons.faMoneyBill"></fa-icon>
+          </div>
+          <div class="div-balance-labels">
+            <label class="lbl-balance-text">Ingresos</label>
+            <label class="lbl-balance-money">4,000,000</label>
+          </div>
+        </div>
+
+        <div class="div-balance-expenses">
+          <div class="div-balance-icons">
+            <fa-icon class="icon-arrow-expenses" [icon]="Icons.faArrowUp"></fa-icon>
+            <fa-icon class="icon-money-expenses" [icon]="Icons.faMoneyBill"></fa-icon>
+          </div>
+          <div class="div-balance-labels">
+            <label class="lbl-balance-text">Egresos</label>
+            <label class="lbl-balance-money">3,000,000</label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="div-transactions">
+    <div class="div-transactions-header">
+      <div class="div-recent-transactions">
+        <label class="lbl-transaction">Transacciones Recientes</label>
+      </div>
+      <div class="div-btn-transaction">
+        <div class="div-back-icon-transaction">
+          <fa-icon class="icon-transaction" [icon]="Icons.faArrowRightArrowLeft"></fa-icon>
+        </div>
+        <span class="lbl-transaction">Ver Todas</span>
+      </div>
+    </div>
+    <div class="div-list-transactions">
+      <app-list-recent-transactions></app-list-recent-transactions>
+    </div>
+  </div>
+
+  <div class="div-footer">
+    <app-nav-bar></app-nav-bar>
+  </div>
+
+</div>
+
+

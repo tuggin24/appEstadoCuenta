@@ -1,0 +1,37 @@
+.body {
+  background-color: #212121;
+  color: white !important;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+}
+
+span {
+  font-size: large
+}
+
+.div-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-transaction-info {
+  display: flex;
+  flex-direction: column;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: unset;
+}

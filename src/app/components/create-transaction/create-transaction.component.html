@@ -1,0 +1,28 @@
+<div class="body">
+  <div class="container">
+    <h2>Nueva Transacci&oacute;n</h2>
+    <div class="div-header">
+      <span>Cuanto?</span>
+      <div class="div-value">
+        <fa-icon [icon]="Icons.faDollarSign"></fa-icon>
+        <input type="text" placeholder="1,000">
+      </div>
+    </div>
+
+    <div class="div-transaction-info">
+      <select></select>
+      <select></select>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>DD/MM/YYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div  align="end">
+      <!-- <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button> -->
+    </div>
+  </div>
+</div>
